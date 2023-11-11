@@ -13,7 +13,7 @@ func loadBots(path string) (bots []*Bot, err error) {
 	file, err := os.Open(BotsDataPath)
 	if err != nil {
 		if os.IsNotExist(err) {
-			return nil, err
+			return nil, nil
 		}
 
 		return nil, err
