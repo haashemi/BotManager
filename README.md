@@ -32,3 +32,8 @@ $ # Modify the config.yaml however you want here
 $ go build .
 $ ./BotManagerBot
 ```
+
+### Note:
+
+I don't really recommend using this project as it's made because of my laziness to deal with Linux file permissions, Nginx configurations, and dynamic bot whitelisting.
+If you can deal with the stuff I said in a better way, then for sure do it in your own way. But if you are lazy as me, just use it and worry about nothing.
