@@ -12,12 +12,14 @@ import (
 	"github.com/haashemi/BotManagerBot/manager"
 )
 
+type RunFunc func() error
+
 type API struct {
 	manager *manager.Manager
 }
 
-// NewAPI returns a new http.Server with handlers attached to it.
-func NewAPI(config *config.Config, manager *manager.Manager) (*http.Server, error) {
+// NewAPI initializes an API instance and returns the ListerAndServe method
+func NewAPI(config *config.Config, manager *manager.Manager) (RunFunc, error) {
 	target, err := url.Parse(config.TelegramBotAPI.Host)
 	if err != nil {
 		return nil, err
@@ -30,7 +32,7 @@ func NewAPI(config *config.Config, manager *manager.Manager) (*http.Server, erro
 	r.HandleFunc("/file/{token}/{dir}/{file}", api.fileHandler(config.TelegramBotAPI.Dir))
 
 	srv := &http.Server{Handler: r, Addr: config.API.Addr}
-	return srv, nil
+	return func() error { return srv.ListenAndServe() }, nil
 }
 
 // methodHandler handles api method calls
