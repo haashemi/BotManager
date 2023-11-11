@@ -15,7 +15,7 @@ The bot is based on the [tgo](https://github.com/haashemi/tgo) framework, and th
 There are only two endpoints, which are 1:1 to the official Telegram Bot API.
 
 1. `/{token}/{method}`
-2. `/file/{token}/{dir}/{file}`
+2. `/file/{token}/{dir}/{file}` (`{dir}/{file}` is equal to `{file_path}`)
 
 ### Usage:
 
