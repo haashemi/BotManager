@@ -1,9 +1,11 @@
 github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
-github.com/haashemi/tgo v0.0.0-20231024223112-a231cadfca63 h1:rRO9D7k64X+rsASMCNGz9fgdwC3HNPyI2yoHap+Je8Y=
-github.com/haashemi/tgo v0.0.0-20231024223112-a231cadfca63/go.mod h1:sXudynnpbEh1OhIft2aQc05GGosrHJh7EUx5LRAdQx4=
 github.com/haashemi/tgo v0.0.0-20231028170701-618af441f481 h1:JpAPbW61lAPg6fL3Yxyl7eclh4gEZS+KPvaFG1V3F6s=
 github.com/haashemi/tgo v0.0.0-20231028170701-618af441f481/go.mod h1:sXudynnpbEh1OhIft2aQc05GGosrHJh7EUx5LRAdQx4=
+github.com/samber/lo v1.38.1 h1:j2XEAqXKb09Am4ebOg31SpvzUTTs6EN3VfgeLUhPdXM=
+github.com/samber/lo v1.38.1/go.mod h1:+m/ZKRl6ClXCE2Lgf3MsQlWfh4bn1bz6CXEOxnEXnEA=
+golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17 h1:3MTrJm4PyNL9NBqvYDSj3DHl46qQakyfqfWo4jgfaEM=
+golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17/go.mod h1:lgLbSvA5ygNOMpwM/9anMpWVlVJ7Z+cHWq/eFuinpGE=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
