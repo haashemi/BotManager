@@ -30,8 +30,8 @@ func main() {
 		log.Fatalln("Failed to initialize the bot", err)
 	}
 
-	go log.Fatalln(runApi())
-	go log.Fatalln(runBot())
+	go func() { log.Fatalln(runApi()) }()
+	go func() { log.Fatalln(runBot()) }()
 
 	select {}
 }
