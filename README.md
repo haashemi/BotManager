@@ -6,9 +6,9 @@ The bot is based on the [tgo](https://github.com/haashemi/tgo) framework, and th
 
 ### Bot Commands:
 
-- `add` Whitelist a new bot
-- `rem` Remove a bot from the whitelist
-- `bots` List of whitelisted bots
+- `/add` Whitelist a new bot
+- `/rem` Remove a bot from the whitelist
+- `/bots` List of whitelisted bots
 
 ### API Endpoints:
 
