@@ -71,12 +71,15 @@ func (m *Manager) AddBot(bot *Bot) error {
 }
 
 // RemoveBot removes the bot from the manager's bots.
-func (m *Manager) RemoveBot(token string) error {
+func (m *Manager) RemoveBot(token string) (*Bot, error) {
 	m.botMut.Lock()
-	delete(m.bots, token)
+	bot, ok := m.bots[token]
+	if ok {
+		delete(m.bots, token)
+	}
 	m.botMut.Unlock()
 
-	return save(m.Bots(), BotsDataPath)
+	return bot, save(m.Bots(), BotsDataPath)
 }
 
 // IsBotExists checks the manager's bots to check the existence of the token.
