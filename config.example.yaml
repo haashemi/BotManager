@@ -1,0 +1,16 @@
+api:
+  # API Address that you want to listen on
+  addr: "localhost:3412"
+
+bot:
+  # Your bot manager's token gathered from BotFather
+  token: "6957624294:AAHFccVFEfKleLoVV0fYYUzNJN9rRMb-09g"
+  # User id of the people who should have access to this bot
+  admins: [682785614]
+
+telegram_bot_api:
+  # telegram-bot-api directory which is passed to the
+  # running telegram-bot-api instance via "-dir" param
+  dir: "/home/ali/tg-server"
+  # telegram-bot-api's instance host url
+  host: "http://localhost:8081"
