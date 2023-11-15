@@ -4,7 +4,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/haashemi/BotManagerBot/config"
+	"github.com/haashemi/BotManager/config"
 	"github.com/samber/lo"
 )
 

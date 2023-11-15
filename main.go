@@ -3,10 +3,10 @@ package main
 import (
 	"log"
 
-	"github.com/haashemi/BotManagerBot/api"
-	"github.com/haashemi/BotManagerBot/bot"
-	"github.com/haashemi/BotManagerBot/config"
-	"github.com/haashemi/BotManagerBot/manager"
+	"github.com/haashemi/BotManager/api"
+	"github.com/haashemi/BotManager/bot"
+	"github.com/haashemi/BotManager/config"
+	"github.com/haashemi/BotManager/manager"
 )
 
 func main() {

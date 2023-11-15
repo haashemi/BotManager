@@ -1,8 +1,8 @@
 package bot
 
 import (
-	"github.com/haashemi/BotManagerBot/config"
-	"github.com/haashemi/BotManagerBot/manager"
+	"github.com/haashemi/BotManager/config"
+	"github.com/haashemi/BotManager/manager"
 	"github.com/haashemi/tgo"
 	"github.com/haashemi/tgo/filters"
 	"github.com/haashemi/tgo/routers/message"

@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	"github.com/gorilla/mux"
-	"github.com/haashemi/BotManagerBot/config"
-	"github.com/haashemi/BotManagerBot/manager"
+	"github.com/haashemi/BotManager/config"
+	"github.com/haashemi/BotManager/manager"
 )
 
 type RunFunc func() error

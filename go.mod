@@ -1,4 +1,4 @@
-module github.com/haashemi/BotManagerBot
+module github.com/haashemi/BotManager
 
 go 1.19
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/haashemi/BotManagerBot/manager"
+	"github.com/haashemi/BotManager/manager"
 	"github.com/haashemi/tgo"
 	"github.com/haashemi/tgo/routers/message"
 )

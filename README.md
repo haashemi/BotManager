@@ -1,4 +1,4 @@
-# BotManagerBot
+# BotManager
 
 A Simple bot manager for securing local hosted telegram-bot-api and avoiding Linux file permissions, nginx configurations, etc.
 
@@ -14,8 +14,9 @@ The bot is based on the [tgo](https://github.com/haashemi/tgo) framework, and th
 
 There are only two endpoints, which are 1:1 to the official Telegram Bot API.
 
-1. `/{token}/{method}`
-2. `/file/{token}/{dir}/{file}` (`{dir}/{file}` is equal to `{file_path}`)
+- `/{token}/{method}`
+- `/file/{token}/{dir}/{file}`
+  - (`{dir}/{file}` is equal to `{file_path}`)
 
 ### Usage:
 
@@ -30,7 +31,7 @@ $ # Modify the config.yaml however you want here
 
 ```
 $ go build .
-$ ./BotManagerBot
+$ ./BotManager
 ```
 
 ### Note:
