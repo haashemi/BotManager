@@ -1,7 +1,6 @@
 package api
 
 import (
-	"encoding/json"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
@@ -11,6 +10,8 @@ import (
 	"github.com/haashemi/BotManager/config"
 	"github.com/haashemi/BotManager/manager"
 )
+
+var UnauthorizedResponse = []byte(`{"ok":false,"error_code":403,"description":"Token is not authorized in the BotManager"}`)
 
 type RunFunc func() error
 
@@ -46,13 +47,9 @@ func (api *API) methodHandler(target *url.URL) http.HandlerFunc {
 		// Don't proxy the request if bot is not whitelisted.
 		//
 		// TODO: send an alert via the bot to the admins.
-		// TODO: write a proper error, not this empty object.
-		// TODO: cache the error's bytes somewhere and don't marshal every time.
 		if !api.manager.IsBotExists(botToken) {
-			invalidData, _ := json.Marshal(map[string]any{})
-
 			w.WriteHeader(http.StatusForbidden)
-			w.Write(invalidData)
+			w.Write(UnauthorizedResponse)
 			return
 		}
 
